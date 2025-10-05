@@ -35,8 +35,7 @@ Para mais informações, consulte o arquivo [LICENSE](./LICENSE).
 
 ---
 
-## 📬 Contato
-📧 [erikanova.dev@gmail.com](mailto:erikanova.dev@gmail.com)  
+## 📬 Contato 
 🌐 [LinkedIn](https://www.linkedin.com/in/erika-nova)  
 💻 [GitHub](https://github.com/erikanova)
 
