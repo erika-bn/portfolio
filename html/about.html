@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sobre mim — Erika Nova</title>
+
+  <meta name="description" content="Conheça Erika Nova — Front-end, IoT e Automação Industrial. Trajetória, interesses e ferramentas." />
+  <link rel="icon" href="/assets/img/favicon.png" type="image/png" />
+  <link rel="stylesheet" href="/styles/style.css" />
+</head>
+<body>
+  <!-- ===== Header (padrão do site) ===== -->
+  <header class="cabecalho">
+    <div class="navbar">
+      <a class="brand" href="/index.html" aria-label="Página inicial">
+        <span class="logo-en">En</span><span class="logo-dot">.</span>
+      </a>
+      <nav class="menu" aria-label="Menu principal">
+        <a class="menu__link" href="/index.html">Home</a>
+        <a class="menu__link" href="/html/about.html" aria-current="page">Sobre mim</a>
+        <a class="menu__link" href="/html/projetos.html">Projetos</a>
+        <a class="menu__link" href="/html/cv.html">Currículo</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== ABOUT ===== -->
+  <main class="about">
+    <main class="about">
+  <div class="about__inner">
+    <div class="about__content">
+      <span class="badge">São Paulo • BR · Front-end · IoT & Automação</span>
+      <h1 class="about__title">Saiba quem <span class="tinta">eu sou</span></h1>
+
+      <p class="about__text">
+        Oi! Sou <strong>Erika Nova</strong>, apaixonada por tecnologia e por dar vida a ideias.
+        Estudo <strong>Automação Industrial</strong> (FATEC) e <strong>ADS</strong> (FIAP), unindo
+        <strong>software</strong> e <strong>mundo físico</strong> em soluções funcionais e bonitas.
+      </p>
+
+      <p class="about__text">
+        Gosto de criar projetos que conectam <strong>IoT</strong>, <strong>CLP</strong> e <strong>web</strong>
+        com foco em experiência. Me interessam especialmente
+        <span class="tinta">Node-RED</span>, <span class="tinta">Home Assistant</span>,
+        <span class="tinta">MQTT</span>, <span class="tinta">Tasmota</span> e protocolos como
+        <span class="tinta">Profinet</span> e <span class="tinta">Modbus</span>.
+      </p>
+    </div>
+
+    <div class="about__art">
+      <div class="about__frame">
+        <img
+          src="/assets/img/ima.png"
+          alt="Ilustração de Erika Nova desenvolvendo com seus gatinhos"
+          class="about__img"
+        />
+      </div>
+    </div>
+  </div>
+</main>
+
+
+    <!-- ===== Ferramentas ===== -->
+    <section class="tools">
+      <h2>🔧 Ferramentas que uso</h2>
+      <ul class="tools__list">
+        <li>🟦 VS Code</li>
+        <li>🐙 Git &amp; GitHub</li>
+        <li>🟥 Node-RED</li>
+        <li>🏠 Home Assistant</li>
+        <li>🔌 Tasmota</li>
+      </ul>
+    </section>
+
+    <!-- ===== GitHub Activity (heatmap) ===== -->
+    <section class="github-activity">
+      <h2>📆 Minha atividade no GitHub</h2>
+      <img
+        src="https://ghchart.rshah.org/erika-bn"
+        alt="Gráfico de contribuições do GitHub de Erika Nova"
+        loading="lazy" />
+      <p>Últimas contribuições nos últimos 12 meses 🚀</p>
+    </section>
+  </main>
+
+  <!-- ===== Rodapé melhorado ===== -->
+<footer class="rodape">
+  <p>© 2025 <strong>Erika Nova</strong> — Desenvolvido com 💻 e ☕</p>
+</footer>
+
+
+
+
+  <!-- Marca link ativo no menu (opcional se já usa em /js/main.js) -->
+  <script>
+    (function () {
+      const current = location.pathname.split('/').pop() || 'index.html';
+      document.querySelectorAll('.menu__link').forEach(a => {
+        const href = a.getAttribute('href').split('/').pop();
+        if (href === current) a.setAttribute('aria-current', 'page');
+      });
+    })();
+  </script>
+</body>
+</html>

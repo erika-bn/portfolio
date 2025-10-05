@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+  <title>Projetos — Erika Nova</title>
+  <meta name="description" content="Projetos em destaque de Erika Nova: IoT, Automação e Web. ESP32/ESP8266, Node-RED, Tasmota, Home Assistant, Profinet e Modbus." />
+
+  <link rel="icon" href="/assets/img/favicon.png" type="image/png" />
+  <link rel="stylesheet" href="/styles/style.css" />
+</head>
+<body>
+  <!-- Cabeçalho padrão -->
+  <header class="cabecalho">
+    <div class="navbar">
+      <a class="brand" href="/index.html" aria-label="Página inicial">
+        <span class="logo-en">En</span><span class="logo-dot">.</span>
+      </a>
+      <nav class="menu" aria-label="Menu principal">
+        <a class="menu__link" href="/index.html">Home</a>
+        <a class="menu__link" href="/html/about.html">Sobre mim</a>
+        <a class="menu__link" href="/html/projetos.html" aria-current="page">Projetos</a>
+        <a class="menu__link" href="/html/cv.html">Currículo</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="projects">
+    <header class="projects__header">
+      <h1>Projetos em <span class="tinta">Destaque</span></h1>
+      <p class="projects__lead">IoT + Automação + Web — conecto dispositivos físicos a fluxos e dashboards.</p>
+    </header>
+
+    <!-- FILTROS -->
+    <div class="projects__filters" role="tablist" aria-label="Filtrar projetos">
+      <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">✨ Todos</button>
+      <button class="filter-btn" data-filter="iot" role="tab">IoT</button>
+      <button class="filter-btn" data-filter="automacao" role="tab">Automação</button>
+      <button class="filter-btn" data-filter="web" role="tab">Web</button>
+      <button class="filter-btn" data-filter="apps" role="tab">Apps</button>
+    </div>
+
+    <!-- GRID -->
+    <ul class="projects__grid" role="list">
+      <!-- 1 -->
+      <li class="p-card" data-category="iot">
+        <figure class="p-card__media">
+          <img src="/assets/img/SMARTHOME.jpg" alt="Smart Home IA (TCC) — maquete com automações" loading="lazy" width="640" height="360" />
+        </figure>
+        <div class="p-card__body">
+          <h2 class="p-card__title">Smart Home IA (TCC)</h2>
+          <p class="p-card__desc">ESP8266/ESP32 (Tasmota), Node-RED, Zigbee2MQTT, Home Assistant e AWS.</p>
+          <ul class="p-card__tags">
+            <li>ESP8266/ESP32</li><li>MQTT</li><li>Node-RED</li><li>Home Assistant</li><li>Zigbee2MQTT</li>
+          </ul>
+          <div class="p-card__links">
+            <a href="https://github.com/erika-bn/Smart-home" target="_blank" rel="noopener">Código</a>
+            <a href="https://www.youtube.com/watch?v=ZbR1B3CSwtY" target="_blank" rel="noopener">Vídeo</a>
+          </div>
+        </div>
+      </li>
+
+      <!-- 2 -->
+      <li class="p-card" data-category="automacao">
+        <figure class="p-card__media">
+          <img src="/assets/img/portao.webp" alt="Protótipo de portão automático controlado por MQTT" loading="lazy" width="640" height="360" />
+        </figure>
+        <div class="p-card__body">
+          <h2 class="p-card__title">Portão Automático MQTT</h2>
+          <p class="p-card__desc">ESP32 + Node-RED: fluxo de acionamento, sensores e lógica de segurança.</p>
+          <ul class="p-card__tags">
+            <li>ESP32</li><li>MQTT</li><li>Node-RED</li>
+          </ul>
+          <div class="p-card__links">
+            <a href="https://github.com/erika-bn/Portao-ESP32" target="_blank" rel="noopener">Código</a>
+          </div>
+        </div>
+      </li>
+
+      <!-- 3 -->
+      <li class="p-card" data-category="apps">
+        <figure class="p-card__media">
+          <img src="/assets/img/fluvius.png" alt="App Fluvius com telas de login e mapa de risco de enchentes" loading="lazy" width="640" height="360" />
+        </figure>
+        <div class="p-card__body">
+          <h2 class="p-card__title">Fluvius (Alerta de Enchentes)</h2>
+          <p class="p-card__desc">App geoespacial com camadas de risco e notificações para áreas selecionadas.</p>
+          <ul class="p-card__tags">
+            <li>Mapas</li><li>Notificações</li>
+          </ul>
+          <div class="p-card__links">
+            <a href="https://github.com/SEU_REPO_FLUVIUS" target="_blank" rel="noopener">Código</a>
+          </div>
+        </div>
+      </li>
+
+      <!-- 4 -->
+      <li class="p-card" data-category="apps">
+        <figure class="p-card__media">
+          <img src="/assets/img/Swift.png" alt="App para colaboradores JBS Swift" loading="lazy" width="640" height="360" />
+        </figure>
+        <div class="p-card__body">
+          <h2 class="p-card__title">Challenge FIAP — Swift</h2>
+          <p class="p-card__desc">Aplicativo de bem-estar e produtividade para colaboradores (desafio 2).</p>
+          <ul class="p-card__tags">
+            <li>Design</li><li>Prototipagem</li>
+          </ul>
+          <div class="p-card__links">
+            <a href="https://github.com/erika-bn/Challenge-JBS" target="_blank" rel="noopener">Código</a>
+          </div>
+        </div>
+      </li>
+
+      <!-- 5 -->
+      <li class="p-card" data-category="web">
+        <figure class="p-card__media">
+          <img src="/assets/img/site.png" alt="Site Meteora — projeto de HTML e CSS" loading="lazy" width="640" height="360" />
+        </figure>
+        <div class="p-card__body">
+          <h2 class="p-card__title">Site Meteora (Alura)</h2>
+          <p class="p-card__desc">Projeto de HTML/CSS focado em responsividade e semântica.</p>
+          <ul class="p-card__tags">
+            <li>HTML</li><li>CSS</li>
+          </ul>
+          <div class="p-card__links">
+            <a href="https://github.com/erika-bn/curso-html-alura" target="_blank" rel="noopener">Código</a>
+            <a href="https://aluraplus-swart-sigma.vercel.app/" target="_blank" rel="noopener">Site</a>
+          </div>
+        </div>
+      </li>
+
+      <!-- 6 -->
+      <li class="p-card" data-category="apps">
+        <figure class="p-card__media">
+          <img src="/assets/img/fintech.png" alt="Fintech — telas de app financeiro" loading="lazy" width="640" height="360" />
+        </figure>
+        <div class="p-card__body">
+          <h2 class="p-card__title">Fintech FIAP</h2>
+          <p class="p-card__desc">App para controle de despesas e metas financeiras.</p>
+          <ul class="p-card__tags">
+            <li>Wireframes</li><li>UX</li>
+          </ul>
+          <div class="p-card__links">
+            <a href="https://github.com/erika-bn/fintech" target="_blank" rel="noopener">Código</a>
+          </div>
+        </div>
+      </li>
+    </ul>
+
+    <!-- VER MAIS -->
+    <div class="projects__more">
+      <button id="loadMore" class="btn btn--menu">Ver mais projetos ↓</button>
+    </div>
+  </main>
+
+  <!-- Rodapé padrão -->
+  <footer class="rodape">
+  <p>© 2025 <strong>Erika Nova</strong> — Desenvolvido com 💻 e ☕</p>
+</footer>
+
+  <!-- Filtros + ver mais -->
+  <script src="/scripts/filter.js"></script>
+</body>
+</html>
